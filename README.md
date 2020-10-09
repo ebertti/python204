@@ -10,7 +10,7 @@
   
 * Pycharm Profissional 
     * Licença para alunos: https://www.jetbrains.com/community/education/
-
+    * Download: https://www.jetbrains.com/pycharm/download/#section=windows
 
 # Avisos:
 
