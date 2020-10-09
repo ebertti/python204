@@ -17,3 +17,4 @@ Clarice:
 ## Links:
 
 * [https://www.jetbrains.com/lp/python-developers-survey-2019/]()
+* [https://insights.stackoverflow.com/survey/2020]()
