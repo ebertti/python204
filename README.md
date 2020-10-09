@@ -8,7 +8,8 @@
   * Deixar configurações como padrão recomendado durante a instalação
   * https://www.youtube.com/watch?v=i-MuSAwgwCU
   
-
+* Pycharm Profissional 
+    * Licença para alunos: https://www.jetbrains.com/community/education/
 
 
 # Avisos:
