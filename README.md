@@ -1,6 +1,15 @@
 # Infnet Python 20.4 
 
-Por quanto é isso
+### Baixar
+
+* Python 3.8.6 - https://www.python.org/downloads/release/python-386/
+  * Windows: Windows x86-64 executable installer
+  * Pasta: C:/Python38
+  * Deixar configurações como padrão recomendado durante a instalação
+  * https://www.youtube.com/watch?v=i-MuSAwgwCU
+  
+
+
 
 # Avisos:
 
