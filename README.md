@@ -12,3 +12,8 @@ Clarice:
 
 * Telegram: [@Klaresa](https://t.me/klaresa)
 * Email: [clarice.santos@al.infnet.edu.br](mailto:clarice.santos@al.infnet.edu.br)
+
+
+## Links:
+
+* [https://www.jetbrains.com/lp/python-developers-survey-2019/]()
