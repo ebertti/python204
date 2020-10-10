@@ -1,27 +1,28 @@
-# Infnet Python 20.4 
+# Infnet Python 2020.4 
 
-### Baixar
+## Baixar
 
 * Python 3.8.6 - https://www.python.org/downloads/release/python-386/
-  * Windows: Windows x86-64 executable installer
-  * Pasta: C:/Python38
-  * Deixar configurações como padrão recomendado durante a instalação
-  * https://www.youtube.com/watch?v=i-MuSAwgwCU
-  
+    * Windows: Windows x86-64 executable installer
+    * Pasta: C:/Python38
+    * Deixar configurações como padrão recomendado durante a instalação
+    * https://www.youtube.com/watch?v=i-MuSAwgwCU
+ 
 * Pycharm Profissional 
     * Licença para alunos: https://www.jetbrains.com/community/education/
-    * Download: https://www.jetbrains.com/pycharm/download/#section=windows
-
-# Avisos:
+    * Download Profissional: https://www.jetbrains.com/pycharm/download/#section=windows
+    * Evitem instalar features extras
+    
+## Avisos:
 
 [https://t.me/python204](https://t.me/python204)
 
-# Monitor:
+## Monitor:
 
-Clarice:
+* Clarice:
 
-* Telegram: [@Klaresa](https://t.me/klaresa)
-* Email: [clarice.santos@al.infnet.edu.br](mailto:clarice.santos@al.infnet.edu.br)
+    * Telegram: [@Klaresa](https://t.me/klaresa)
+    * Email: [clarice.santos@al.infnet.edu.br](mailto:clarice.santos@al.infnet.edu.br)
 
 
 ## Links:
