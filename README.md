@@ -19,7 +19,7 @@
 
 ## Exercícios:
 
-[https://wiki.python.org.br/ExerciciosListas]()
+* https://wiki.python.org.br/ExerciciosListas
 
 ## Monitor:
 
