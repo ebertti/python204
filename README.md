@@ -17,6 +17,10 @@
 
 [https://t.me/python204](https://t.me/python204)
 
+## Exercícios:
+
+[https://wiki.python.org.br/ExerciciosListas]()
+
 ## Monitor:
 
 * Clarice:
