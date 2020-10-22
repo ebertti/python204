@@ -151,7 +151,7 @@ def questao12():
     """
     import random
     n = 30
-    idades = [random.randint(8, 18) for i in range(n)]
+    idades = [  random.randint(8, 18) for i in range(n)]
     alturas = [random.randint(120, 190) for i in range(n)]
     contagem = 0
     media = sum(alturas) / len(alturas)
