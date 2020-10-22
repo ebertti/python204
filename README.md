@@ -31,5 +31,8 @@
 
 ## Links:
 
-* [https://www.jetbrains.com/lp/python-developers-survey-2019/]()
-* [https://insights.stackoverflow.com/survey/2020]()
+* https://pyformat.info/
+* https://www.python.org/dev/peps/pep-0008/
+* https://www.vivaolinux.com.br/artigo/PEP-8-Guia-de-estilo-para-codigo-Python 
+* https://www.jetbrains.com/lp/python-developers-survey-2019/
+* https://insights.stackoverflow.com/survey/2020
