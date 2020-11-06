@@ -8,16 +8,22 @@ ALTURA_TELA = 300
 # Será utilizado para a velocidade do jogo
 FPS = 200
 # Valores para o desenho das paletas e do fundo
-LARGURA_LINHA = 10
+LARGURA_LINHA = 5
 PALETA_TAMANHO = 50
-PALETAOFFSET = 20
+PALETAOFFSET = 50
 
 # cores
-PRETO = (0, 0, 0)
-BRANCO = (255, 255, 255)
+PRETO = (204, 231, 232)
+BRANCO = (224, 123, 57)
+
+MOVIMENTO = {
+    'cima': False,
+    'baixo': False,
+    'fator': 1
+}
 
 
-# Função para desenhar o fundo
+# Função para desenhar o fundoplacar
 def desenhaArena():
     DISPLAYSURF.fill(PRETO)
     # Desenha a quadra
@@ -47,7 +53,10 @@ def desenhaBola(bola):
 # altera a direção da bola e retorna ela
 def moveBola(bola, bolaDirX, bolaDirY):
     bola.x += bolaDirX
-    bola.y += bolaDirY
+
+    if bola.x % MOVIMENTO['fator'] == 0:
+        bola.y += bolaDirY
+
     return bola
 
 
@@ -63,18 +72,31 @@ def verificaColisao(bola, bolaDirX, bolaDirY):
 
 def inteligenciaArtificial(bola, bolaDirX, paleta2):
     # Movimentar a paleta quando a bola vem em direção da paleta
-    if bolaDirX == 1:
-        if bola.x > LARGURA_TELA // 2:
+    if bola.x > LARGURA_TELA // 2:
+        if bola.x % 2 == 0:
             if paleta2.centery < bola.centery:
                 paleta2.y += 1
             else:
                 paleta2.y -= 1
+    elif bola.x > LARGURA_TELA // 4:
+        if bola.x % 5 == 0:
+            if paleta2.centery < bola.centery:
+                paleta2.y += 1
+            else:
+                paleta2.y -= 1
+
     return paleta2
 
 
 # Verifica a colisão da bola com a paleta1 ou paleta2
 def verificaColisaoBola(bola, paleta1, paleta2, bolaDirX):
     if bolaDirX == -1 and paleta1.right == bola.left and paleta1.top < bola.top and paleta1.bottom > bola.bottom:
+
+        if paleta1.centery < bola.centery:
+            MOVIMENTO['fator'] = 3
+        else:
+            MOVIMENTO['fator'] = 1
+
         return -1
     elif bolaDirX == 1 and paleta2.left == bola.right and paleta2.top < bola.top and paleta2.bottom > bola.bottom:
         return -1
@@ -89,11 +111,11 @@ def verificaPlacar(paleta1, bola, placar, bolaDirX):
         return 0
     # 1 ponto por acertar a bola
     elif bolaDirX == 1 and paleta1.right == bola.left and paleta1.top < bola.top and paleta1.bottom > bola.bottom:
-        placar += 1
+        placar += 2
         return placar
     # 10 pontos se vencer a paleta do computador
     elif bola.right == LARGURA_TELA - LARGURA_LINHA:
-        placar += 10
+        placar += 5
         return placar
     # retorna o mesmo placar se nenhum ponto foi adicionado
     else:
@@ -109,6 +131,14 @@ def desenhaPlacar(placar):
 
 
 # Função principal
+def movimentarPaleta(paleta):
+
+    if MOVIMENTO['cima']:
+        paleta.y -= 2
+
+    if MOVIMENTO['baixo']:
+        paleta.y += 2
+
 def main():
     placar = 0
     pygame.init()
@@ -153,9 +183,12 @@ def main():
             if event.type == QUIT:
                 pygame.quit()
                 sys.exit()
-            elif event.type == MOUSEMOTION:
-                mouseX, mouseY = event.pos
-                paleta1.y = mouseY
+            elif event.type in (KEYDOWN, KEYUP):
+                teclado = pygame.key.get_pressed()
+                MOVIMENTO['baixo'] = teclado[K_DOWN]
+                MOVIMENTO['cima'] = teclado[K_UP]
+
+        movimentarPaleta(paleta1)
 
         desenhaArena()
         desenhaPaleta(paleta1)
