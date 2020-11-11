@@ -36,3 +36,5 @@
 * https://www.vivaolinux.com.br/artigo/PEP-8-Guia-de-estilo-para-codigo-Python 
 * https://www.jetbrains.com/lp/python-developers-survey-2019/
 * https://insights.stackoverflow.com/survey/2020
+
+ola
